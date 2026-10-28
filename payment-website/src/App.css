@@ -1,0 +1,201 @@
+/* same colours as the Java AWT app */
+:root {
+  --navy: #16366e;
+  --light: #e8f0fa;
+  --green: #1e7d46;
+  --red: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: #222;
+}
+
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.header {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 22px 10px 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.card {
+  background: white;
+  margin: 16px;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card.error {
+  color: var(--red);
+  text-align: center;
+}
+
+.ref {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+.ref b {
+  display: block;
+  font-size: 20px;
+  color: var(--navy);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  text-align: center;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.small {
+  font-size: 12px;
+  color: #888;
+}
+
+.plane {
+  font-size: 26px;
+  color: var(--navy);
+}
+
+.details {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.details td {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.details td:first-child {
+  color: #777;
+}
+
+.details td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+.amount {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--navy);
+  margin: 20px 0 10px;
+}
+
+.amount span {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  color: #777;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.done {
+  background: var(--green);
+}
+
+.fail {
+  background: var(--red);
+}
+
+.retry {
+  background: var(--navy);
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.result {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.result b:first-child {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.success {
+  background: #e3f5ea;
+  color: var(--green);
+}
+
+.failed {
+  background: #fdeaea;
+  color: var(--red);
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
